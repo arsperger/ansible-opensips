@@ -12,7 +12,7 @@
     retries: 10
     delay: 2
 
-  - name: Setup OpenSIPS repository (Debian)
+  - name: Setup OpenSIPS repository
     apt_repository:
       repo: 'deb {{ opensips_apt_repo }} {{ ansible_distribution_release }} {{ opensips_version }}-{{ opensips_build }}'
       state: present
@@ -28,7 +28,7 @@
     retries: 10
     delay: 2
 
-  - name: Install OpenSIPS additional modules (Debian)
+  - name: Install OpenSIPS additional modules
     apt:
       name: '{{ opensips_modules }}'
       state: present

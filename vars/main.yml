@@ -6,4 +6,4 @@ opensips_apt_key_id: '049AD65B'
 opensips_apt_key_server: 'keyserver.ubuntu.com'
 opensips_apt_repo: 'https://apt.opensips.org'
 
-opensips_modules: [opensips-http-modules, opensips-postgres-module, opensips-tls-module, opensips-tlsmgm-module ]
+opensips_modules: []
